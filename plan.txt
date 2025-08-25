@@ -25,7 +25,7 @@ Framework
     Next.js
 
 User Interface
-    TailwindCSS
+    TailwindCSS 3.4.17
 
 
 ----- Deployment ------- 
