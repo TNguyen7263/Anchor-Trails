@@ -1,0 +1,35 @@
+Authentication
+    OAuth 2.0 (Google idenitity)
+    Firebase (username + password)
+
+----- BACKEND ------- 
+
+Nodes.js + Express 
+
+User Storage
+    PostgreSQL (funcationality)
+    TBD: oracle (analystics and backup)
+    
+
+Password hashing
+    bcrypt
+    TBD: Argon2
+
+Session handling
+    JWT
+
+
+----- FRONTEND ------- 
+Framework
+    React
+    Next.js
+
+User Interface
+    TailwindCSS
+
+
+----- Deployment ------- 
+Google Cloud
+    cloud Run (backend)
+    Cloud SQL  (storage)
+    Firebase Hosting (frontend)
