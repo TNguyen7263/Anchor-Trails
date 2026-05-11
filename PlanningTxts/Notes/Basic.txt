@@ -1,0 +1,17 @@
+Run the code:
+    run "npm run dev" from "my-app" directory (Q: how does this work)
+        builds and execute .next dev
+        Next.js starts a local Server
+        Next.js auto maps routes 
+            
+        React renders the UI components into HTML
+        Tailwind styles everthing via classes
+
+
+Edit the frontend:
+    go to src/app/page.tsx
+    code in TypeScript
+
+Edit routes:
+    **using app router for nested layouts **
+    src/app/

@@ -1,0 +1,110 @@
+══════════════════════════════════════════════════════════════════════════
+│                              USER CLIENT                               │
+│                    Browser / Mobile Web Application                    │
+══════════════════════════════════════════════════════════════════════════
+                       
+┌──────────────────────────────────────────────────────────────────────┐
+│                         FRONTEND (Next.js)                           │
+│                                                                      │
+│  Frameworks                                                          │
+│   • React                                                            │
+│   • Next.js                                                          │
+│                                                                      │
+│  Styling                                                             │
+│   • TailwindCSS                                                      │
+│   • shadcn/ui                                                        │
+│                                                                      │
+│  Responsibilities                                                    │
+│   • UI Rendering                                                     │
+│   • Client State                                                     │
+│   • API Requests                                                     │
+│   • Authentication Flow                                              │
+└──────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   │ HTTPS Requests
+                                   ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│                    AUTHENTICATION LAYER                              │
+│                                                                      │
+│  Firebase Authentication                                             │
+│   • Google OAuth 2.0                                                 │
+│   • Username + Password                                              │
+│   • JWT Issuance                                                     │
+│   • Session Management                                               │
+│   • Password Hashing                                                 │
+└──────────────────────────────────────────────────────────────────────┘
+                                   │
+                                   │ Verified JWT
+                                   ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│                       API GATEWAY / BACKEND                          │
+│                                                                      │
+│                    Hybrid Backend Architecture                       │
+└──────────────────────────────────────────────────────────────────────┘
+                    │                                   │
+                    │                                   │
+                    ▼                                   ▼
+
+┌───────────────────────────────┐      ┌───────────────────────────────┐
+│        NestJS Service         │      │        FastAPI Service        │
+│                               │      │                               │
+│ Main Application Backend      │      │ AI / ML Microservice          │
+│                               │      │                               │
+│ Responsibilities              │      │ Responsibilities              │
+│ • Business Logic              │      │ • AI Processing               │
+│ • REST API                    │      │ • LLM Integration             │
+│ • GraphQL API                 │      │ • Async Workloads             │
+│ • Validation                  │      │ • Python AI Ecosystem         │
+│ • User Management             │      │ • AI Inference                │
+│ • File Metadata               │      │                               │
+│ • Authentication Verification │      │                               │
+└───────────────────────────────┘      └───────────────────────────────┘
+                    │                                   │
+                    │                                   │
+                    └───────────────┬───────────────────┘
+                                    │
+                                    ▼
+
+══════════════════════════════════════════════════════════════════════════
+│                            DATA LAYER                                   │
+══════════════════════════════════════════════════════════════════════════
+
+                ┌───────────────────────────────┐
+                │        Prisma ORM             │
+                │                               │
+                │ • Type-safe queries           │
+                │ • Database schema management  │
+                │ • Migrations                  │
+                └───────────────────────────────┘
+                                │
+                                ▼
+                ┌───────────────────────────────┐
+                │      PostgreSQL Database      │
+                │                               │
+                │ Hosted on Google Cloud SQL    │
+                │                               │
+                │ Stores:                       │
+                │ • Users                       │
+                │ • Metadata                    │
+                │ • App Data                    │
+                │ • Relationships               │
+                │ • File References             │
+                └───────────────────────────────┘
+                                │
+                                │ File Uploads / Retrieval
+                                ▼
+┌──────────────────────────────────────────────────────────────────────┐
+│                          STORAGE LAYER                               │
+│                                                                      │
+│                          AWS S3 Bucket                               │
+│                                                                      │
+│ Stores:                                                              │
+│ • User uploads                                                       │
+│ • Images / Media                                                     │
+│ • Documents                                                          │
+│ • AI assets / datasets                                               │
+│                                                                      │
+│ Security:                                                            │
+│ • Private buckets                                                    │
+│ • Signed upload URLs                                                 │
+└──────────────────────────────────────────────────────────────────────┘

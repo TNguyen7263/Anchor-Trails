@@ -1,0 +1,13 @@
+GOAL1: create a reciept split calculator
+
+Week 1: 
+    Planning, solidify architecture (done)
+
+Week 2:
+    Complete landing home page (started early in week1)
+        basic page created
+
+
+Week 3:
+    Plan page flow 
+

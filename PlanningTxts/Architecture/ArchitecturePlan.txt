@@ -1,0 +1,81 @@
+focus: flexible for future development, modern cloud-native development, potential AI integration
+
+
+------------------- BACKEND ------------------- 
+Hybrid
+    NestJS - main application (structured, modular, scalable, validation system)
+    FastAPI - standalone AI api (async performance, native ecosystem for AI)
+
+Storage
+    AWS S3 - user uploads, media, document, AI assets(data storage, secure)
+
+Database
+    Cloud SQL - managed hosting service 
+    PostgreSQL - acutal database
+    Prisma ORM
+
+API Style
+    REST API
+    GraphQL (powerful for frontend querying but complex)
+
+
+------------------- FRONTEND ------------------- 
+Framework
+    React
+    Next.js
+
+Styling
+    TailwindCSS 3.4.17
+    shadcn/ui (pending)
+
+Planning
+    Figma
+
+
+------------------- Authentication ------------------- 
+Provider 
+    Firebase - password hashing, JWT issuance, session management (Argon2+ JWT is an alt)
+
+Login methods
+    OAuth 2.0 - Google idenitity
+    username + password
+
+
+------------------- Deployment ------------------- 
+Cloud Infrastructure
+    Google Cloud Run
+    Google Cloud SQL
+
+Containerization
+    Docker
+
+Continuous Integration and Continuous Delivery
+    GitHub Actions (automate testing, linting to test style, deployment piplines)
+    ESLint
+
+
+------------------- Testing -------------------
+Test Stack
+    Jest
+    Playwright
+    Supertest
+
+
+------------------- Future growth options -------------------  
+Caching / Queues
+    Redis
+
+Background Jobs
+    BullMQ
+
+Observability
+    OpenTelemetry
+    Sentry
+
+Infrastructure as Code
+    Terraform
+
+Monorepo
+    Turborepo
+
+React Compiler (better for interactive components, and stable projects, performance issues)
