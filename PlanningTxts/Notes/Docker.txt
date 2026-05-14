@@ -1,0 +1,8 @@
+install Docker
+run: docker build -t my-app .
+    docker will auto:
+        -installs Node
+        -installs dependencies
+        -builds app
+        -configures environment
+    based on Dockerfile
