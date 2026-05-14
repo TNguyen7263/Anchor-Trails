@@ -1,13 +1,17 @@
 GOAL1: create a reciept split calculator
+[pacing is suggested by ChatGPT]
 
 Week 1: 
-    Planning, solidify architecture (done)
-
-Week 2:
-    Complete landing home page (started early in week1)
-        basic page created
-
-
-Week 3:
-    Plan page flow 
+    Build
+        Next.js app (App Router)
+        Tailwind setup
+        shadcn/ui setup
+        Basic homepage UI:
+        navbar
+        hero section
+        “get started” button
+    Learn
+        React component structure
+        Next.js routing
+        Tailwind layout system
 

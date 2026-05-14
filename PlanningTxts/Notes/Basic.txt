@@ -1,17 +1,47 @@
+Build basic layout:
+    install Node.js 
+    run "npx create-next-app@latest my-app"
+        set up Next.js, React, Tailwind, app router
+
+
 Run the code:
+
     run "npm run dev" from "my-app" directory (Q: how does this work)
-        builds and execute .next dev
-        Next.js starts a local Server
-        Next.js auto maps routes 
-            
-        React renders the UI components into HTML
-        Tailwind styles everthing via classes
+        execute Next.js dev server (next dev)
+            compiles code on demand when needed
+            stores compiler output, cache routes, and optimized bundles in .next/
+            runs hot reloads (HMR)
+                fast refresh - instant updates in brower when code changes
+                    keeps state when possible
+                    updates UI with full page reload
+            Next.js compiles in memory 
+                usees temporary RAM build for speed
+                avoids rebuilding entire project on disk
+                some output are cached into the .next/ folder later (aka disk)
+        Next.js 
+            starts a local Server
+            auto maps routes from file structure
+            compiles code on demand
+        React 
+            renders the UI components into HTML
+        Tailwind styles 
+            styles UI using className utilities
 
 
-Edit the frontend:
+Edit the frontend :
     go to src/app/page.tsx
     code in TypeScript
 
-Edit routes:
-    **using app router for nested layouts **
-    src/app/
+Routes Basic: 
+    using app router for nested layouts
+    layout.tsx wraps pages inside a folder
+        shared UI (navbar, sidebar, etc.)
+    based on folder structure of src/app/page.tsx
+        folder name = URL segment
+        file name = route entry
+    Example:
+        src/app/
+        ├── page.tsx              → /
+        ├── about/page.tsx        → /about
+        ├── dashboard/page.tsx    → /dashboard
+        ├── blog/[id]/page.tsx    → /blog/123
