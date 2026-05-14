@@ -5,7 +5,6 @@ Build basic layout:
 
 
 Run the code:
-
     run "npm run dev" from "my-app" directory (Q: how does this work)
         execute Next.js dev server (next dev)
             compiles code on demand when needed
