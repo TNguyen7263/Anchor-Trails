@@ -7,9 +7,8 @@ Week 1:
         Tailwind setup
         shadcn/ui setup
         Basic homepage UI:
-        navbar
-        hero section
-        “get started” button
+        compl
+
     Learn
         React component structure
         Next.js routing
