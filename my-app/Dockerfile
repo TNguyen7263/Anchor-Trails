@@ -13,5 +13,5 @@ COPY . .
 RUN npm run build
 # Document the app listens to port 3000.
 EXPOSE 3000
-# runs npm start when the container launches
-CMD ["npm", "start"]
+# runs npm run dev when the container launches
+CMD ["npm", "run", "dev" ]
