@@ -1,0 +1,8 @@
+git stash push -u #stashes changes
+git stash list
+git stash pop #place the change stash
+
+
+git checkout branch #change branch
+
+git status
