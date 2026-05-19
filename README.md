@@ -1,4 +1,4 @@
-My motviation for this project are two things:
+My motviations for this project are:
   1) understand how to build a full-stack project
   2) appeal to my archery team's aesthetics
 
