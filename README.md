@@ -1,9 +1,14 @@
-My motviation for this project is two things:
+My motviation for this project are two things:
   1) understand how to build a full-stack project
-  2) make a site that fits the needs of my archery group
+  2) appeal to my archery team's aesthetics
 
-After finishing this project, I want to explore how to further development the project into something unique, 
-something that represents me. My own artpiece.
 
-For now, this project is just a reciept app...because my archery team eats a lot ^_^. There's other reciept app around so I want to focus
-on creating a UI that is user friendly and inviting to use for my team particularly.
+For now, this project is a reciept app...because my archery team eats a lot ^_^. I am aware there are other reciept app in the market,
+so the app is not an innovative idea. However, it is meaningful to me because it is proof my willingness to learn and an opportunity
+to create something that is personalized for my teammates.
+
+After I finish creating the reciept app, I want to develop it into something complex, so many of my organization choices focus on future
+growth.
+
+
+
