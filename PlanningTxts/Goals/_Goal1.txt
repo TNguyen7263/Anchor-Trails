@@ -1,16 +1,29 @@
 GOAL1: create a reciept split calculator
-[pacing is suggested by ChatGPT]
 
 Week 1: 
-    Build
+    setup/install:
         Next.js app (App Router)
-        Tailwind setup
-        shadcn/ui setup
-        Basic homepage UI:
-        compl
+        React envioronment (via Next.js)
+        Tailwind CSS
+        Node.js runtime
+        shadcn/ui 
+        firebase
+        jest
+        Docker
 
-    Learn
-        React component structure
-        Next.js routing
-        Tailwind layout system
+Week 2:
+    experiment with typescript
+    Start designing the layout on Figma
+
+
+Week 3:
+    implement the design
+
+week 4: 
+    deploy *goal is to have a simple calculator first
+
+week 5:
+    create login in page
+
+    
 

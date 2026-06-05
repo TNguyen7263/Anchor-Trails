@@ -1,0 +1,18 @@
+Use:
+    <div> for layout and grouping inside that area.
+    <main> for page content
+
+When creating functions:
+    Export = other files can import it
+        can include it in the signature of the function
+        or state it at the end of the file in the format:
+        export { ... }
+
+Tailwind className 
+    flex --> horizontal placement
+    justify-between --> logo left, button right
+    justify-between --> vertically center everything
+    border-b --> bottom border
+    sticky top-0 --> attached to the top of the viewport.
+    z-50 --> above other content
+    bg-background --> prevent other content from showing through
