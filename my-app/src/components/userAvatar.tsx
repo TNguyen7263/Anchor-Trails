@@ -12,6 +12,7 @@ export function UserAvatar({ name, imageURL }: UserAvatarItems) {
             <AvatarFallback>
                 {name.slice(0, 2).toUpperCase()}
             </AvatarFallback>
+
         </Avatar>
     );
 }
