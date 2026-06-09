@@ -1,27 +1,19 @@
-import { Button } from "@/components/ui/button"
 import Navbar from "@/features/Navbar"
 import UsersList from "@/features/UsersList"
+import ItemsList from "@/features/ItemsList"
 
 export default function HomePage() {
   return (
     <main>
       <Navbar />
 
-      <div className="flex">
-        <UsersList />
+      <div className="flex min-h-screen">
+        <aside className="w-1/4 border-r p-4">
+          <UsersList />
+        </aside>
 
-        <section className="min-h-screen flex flex-col items-center justify-center gap-6">
-          <h1 className="text-5xl font-bold">
-            First Stop: Receipt Calculator
-          </h1>
-
-          <p className="text-muted-foreground">
-            Built with Next.js, NestJS, FastAPI, and Cloud Infrastructure
-          </p>
-
-          <Button>
-            Get Started
-          </Button>
+        <section className="w-3/4 flex flex-col items-center justify-center gap-6">
+          <ItemsList />
         </section>
       </div>
 
