@@ -1,13 +1,23 @@
 import { UserAvatar } from "@/components/userAvatar";
+import { Button } from "@/components/ui/button";
 
 export default function UsersList() {
     const participants = ["Hello", "World"];
 
     return (
         <section className="rounded-lg border p-4">
-            <h2 className="font-semibold mb-4">
-                Participants
-            </h2>
+
+            <div className="mb-4 flex items-bottom justify-between">
+                <h2 className="font-semibold">
+                    Participants
+                </h2>
+
+                <Button size="sm">
+                    + Add
+                </Button>
+            </div>
+
+
 
             <div className="h-64 overflow-y-auto">
                 {participants.map((p) => (

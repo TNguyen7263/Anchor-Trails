@@ -12,7 +12,7 @@ export default function HomePage() {
           <UsersList />
         </aside>
 
-        <section className="w-3/4 flex flex-col items-center justify-center gap-6">
+        <section className="w-3/4 flex flex-col p-6 gap-6">
           <ItemsList />
         </section>
       </div>
