@@ -20,6 +20,7 @@ docker run -d --name anchor-trails -p 3000:3000 -v $(pwd):/app  -v /app/node_mod
     -p 3000:3000 → exposes your app on localhost:3000
     -v $(pwd):/app → syncs your local code into the container (live changes)
     Start the run in detached mode (background)
+    -v /app/node_modules my-app → name of image built
 docker rm -f anchor-trails
 
 docker ps
