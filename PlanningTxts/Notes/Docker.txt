@@ -1,0 +1,28 @@
+install Docker
+run: docker build -t my-app .
+    docker build --> build image from Dockerfile
+    -t my-app	 --> give image name/tag
+    .	         --> current folder contains Dockerfile
+
+    docker will auto:
+        -installs Node
+        -installs dependencies
+        -builds app
+        -configures environment
+    based on Dockerfile
+
+docker --version
+
+
+docker run -d --name anchor-trails -p 3000:3000 -v $(pwd):/app  -v /app/node_modules my-app
+    -d → runs in background (detached)
+    --name my-app-container → gives it a fixed name
+    -p 3000:3000 → exposes your app on localhost:3000
+    -v $(pwd):/app → syncs your local code into the container (live changes)
+    Start the run in detached mode (background)
+    -v /app/node_modules my-app → name of image built
+docker rm -f anchor-trails
+
+docker ps
+docker stop <container_id>
+docker start <container_id>
