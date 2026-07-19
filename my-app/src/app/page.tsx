@@ -1,6 +1,6 @@
-import Navbar from "@/features/Navbar"
-import UsersList from "@/features/UsersList"
-import ItemsList from "@/features/ItemsList"
+import Navbar from "@/components/basicsupdated/Navbar"
+import UsersList from "@/components/reciept/UsersList"
+import ItemsList from "@/components/reciept/ItemsList"
 
 export default function HomePage() {
   return (

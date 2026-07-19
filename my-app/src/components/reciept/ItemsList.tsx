@@ -1,4 +1,4 @@
-import ReceiptItem from "@/components/ReceiptItem"
+import ReceiptItem from "@/components/reciept/ReceiptItem"
 
 
 export default function ItemsList() {

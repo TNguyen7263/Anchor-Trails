@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { UserAvatar } from "@/components/userAvatar";
+import { Button } from "@/components/basics/button";
+import { UserAvatar } from "@/components/basicsupdated/userAvatar";
 //deciding on...
 //text-xl font-bold text-center
 //absolute left-1/2 -translate-x-1/2 text-xl font-bold

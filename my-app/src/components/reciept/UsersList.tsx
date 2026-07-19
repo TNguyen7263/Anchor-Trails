@@ -1,5 +1,5 @@
-import { UserAvatar } from "@/components/userAvatar";
-import { Button } from "@/components/ui/button";
+import { UserAvatar } from "@/components/basicsupdated/userAvatar";
+import { Button } from "@/components/basics/button";
 
 export default function UsersList() {
     const participants = ["Hello", "World"];
