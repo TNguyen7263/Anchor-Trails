@@ -1,3 +1,6 @@
+remote is the general idea: a copy of your Git repository stored somewhere else (usually GitHub).
+* origin is simply the default name Git gives to one particular remote.
+
 git stash push -u #stashes changes
 git stash list
 git stash pop #place the change stash
@@ -8,7 +11,7 @@ git switch branch
 git switch -c branch #create new branch
 
 
-git status #sees branch status
+git status #sees branch sta
 
 git branch #sees all branch
     -r # remote branch

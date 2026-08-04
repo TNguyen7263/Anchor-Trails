@@ -1,29 +1,24 @@
 GOAL1: create a reciept split calculator
 
-Week 1: 
-    setup/install:
-        Next.js app (App Router)
-        React envioronment (via Next.js)
-        Tailwind CSS
-        Node.js runtime
-        shadcn/ui 
-        firebase
-        jest
-        Docker
+ July 12-18:
+    - finish authentication
+    create login page
+    create project in Firebase
+    configure src/lib/firebase.tsx
+    implement email/password sign-in...or what about phone numbers instead?
+    Add Google OAuth
+    update frontend logic to have logged in vs logged out state
 
-Week 2:
-    experiment with typescript
-    Start designing the layout on Figma
+July 19-25:
+    - create functional calculator (basic, no scanner yet)
+
+July 26-31:  
+    - testing
+
+August 2-8:
+    - deploy and buy url
 
 
-Week 3:
-    implement the design
-
-week 4: 
-    deploy *goal is to have a simple calculator first
-
-week 5:
-    create login in page
 
     
 

@@ -1,9 +1,9 @@
 export default function AuthCard() {
     return (
-        <main>
+        <section className="rounded-lg border p-4">
             <h1>
                 Welcome :D
             </h1>
-        </main>
+        </section>
     );
 }

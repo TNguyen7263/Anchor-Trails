@@ -1,7 +1,14 @@
+import LoginForm from "@/components/auth/LoginForm"
+import Navbar from "@/components/basicsupdated/Navbar"
+
 export default function LoginPage() {
     return (
-        <main>
-            <h1> Login </h1>
+        <main className="min-h-screen flex flex-col">
+            <Navbar />
+            <section className="flex-1 flex items-center justify-center">
+                <LoginForm />
+            </section>
+
         </main>
     );
 }

@@ -10,9 +10,19 @@ When creating functions:
 
 Tailwind className 
     flex --> horizontal placement
+    flex-col --> children goes top to bottom
     justify-between --> logo left, button right
     justify-between --> vertically center everything
     border-b --> bottom border
     sticky top-0 --> attached to the top of the viewport.
     z-50 --> above other content
     bg-background --> prevent other content from showing through
+    w-3/4 --> width: 75%
+
+Variables
+import {useState} from "react"
+const [email, setEmail] = useState("")
+    create variable email and function setEmail
+onChange={ (variable) => setEmail(variable.target.value)} #get input
+value = {variable} #output
+
