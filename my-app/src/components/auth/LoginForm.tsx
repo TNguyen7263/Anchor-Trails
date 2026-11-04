@@ -11,12 +11,18 @@ export default function LoginForm() {
     const [error, setError] = useState("")
 
     function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+        // 1. Validate inputs
         event.preventDefault()
         if (email === "" || password === "") {
             setError("Please enter both your email and password.")
             return
         }
         setError("")
+
+        // 2. Attempt Firebase authentication
+        // 3. Handle successful login
+        // 4. Handle authentication errors
+
     }
 
     return (
@@ -24,6 +30,7 @@ export default function LoginForm() {
             <h1> Welcome back :D</h1>
 
             <div className="flex flex-col gap-4">
+
                 <div className="flex">
                     <Label htmlFor="email" className="w-32">Username/Email:</Label>
                     <Input
@@ -31,6 +38,7 @@ export default function LoginForm() {
                         type="email"
                         placeholder="Enter your email"
                         className="flex-1 rounded border"
+                        value={email}
                         onChange={(event) => setEmail(event.target.value)}
                     />
                 </div>
@@ -53,7 +61,7 @@ export default function LoginForm() {
                 </p>
             )}
             <div className="flex justify-center mt-6">
-                <Button>Login</Button>
+                <Button type="submit">Login</Button>
             </div>
 
         </form>
