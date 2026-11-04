@@ -25,8 +25,10 @@ export default function LoginForm() {
 
             <div className="flex flex-col gap-4">
                 <div className="flex">
-                    <Label className="w-32" >Username/Email:</Label>
-                    <Input type="email"
+                    <Label htmlFor="email" className="w-32">Username/Email:</Label>
+                    <Input
+                        id="email"
+                        type="email"
                         placeholder="Enter your email"
                         className="flex-1 rounded border"
                         onChange={(event) => setEmail(event.target.value)}
@@ -34,8 +36,10 @@ export default function LoginForm() {
                 </div>
 
                 <div className="flex">
-                    <Label className="w-32">Password:</Label>
-                    <Input type="password"
+                    <Label htmlFor="password" className="w-32">Password:</Label>
+                    <Input
+                        id="password"
+                        type="password"
                         placeholder="Enter your password"
                         className="flex-1 rounded border"
                         onChange={(event) => setPassword(event.target.value)}
