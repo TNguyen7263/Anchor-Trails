@@ -50,9 +50,11 @@ export default function LoginForm() {
                         type="password"
                         placeholder="Enter your password"
                         className="flex-1 rounded border"
+                        value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     />
                 </div>
+
             </div>
 
             {error && (
@@ -60,6 +62,7 @@ export default function LoginForm() {
                     {error}
                 </p>
             )}
+
             <div className="flex justify-center mt-6">
                 <Button type="submit">Login</Button>
             </div>
