@@ -1,16 +1,20 @@
-"use client"
 import { useState } from "react"
+import { signInWithEmailAndPassword } from "firebase/auth"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/basics/button"
 import { Input } from "@/components/basics/input"
 import { Label } from "@/components/basics/label"
+import { auth } from "@/lib/firebase"
+
 
 
 export default function LoginForm() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const [error, setError] = useState("")
+    const router = useRouter()
 
-    function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    async function handleSubmit(event: React.SyntheticEvent<HTMLFormElement>) {
         // 1. Validate inputs
         event.preventDefault()
         if (email === "" || password === "") {
@@ -20,9 +24,26 @@ export default function LoginForm() {
         setError("")
 
         // 2. Attempt Firebase authentication
-        // 3. Handle successful login
-        // 4. Handle authentication errors
+        try {
+            await signInWithEmailAndPassword(auth, email, password)
+            // 3. Handle successful login
+            router.push("/")
 
+        } catch (err: any) {
+            // 4. Handle authentication errors
+            switch (err.code) {
+                case "auth/invalid-credential":
+                case "auth/wrong-password":
+                case "auth/user-not-found":
+                    setError("Invalid email or password.")
+                    break
+                case "auth/too-many-requests":
+                    setError("Access temporarily blocked due to many failed logins. Try again later.")
+                    break
+                default:
+                    setError("An unexpected error occurred. Please try again.")
+            }
+        }
     }
 
     return (
