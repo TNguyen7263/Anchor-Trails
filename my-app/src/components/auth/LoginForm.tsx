@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react"
 import { signInWithEmailAndPassword } from "firebase/auth"
 import { useRouter } from "next/navigation"
@@ -26,7 +27,7 @@ export default function LoginForm() {
         // 2. Attempt Firebase authentication
         try {
             await signInWithEmailAndPassword(auth, email, password)
-            // 3. Handle successful login
+            // 3. Handle successful login (redirects)
             router.push("/")
 
         } catch (err: any) {
@@ -51,19 +52,19 @@ export default function LoginForm() {
             <h1> Welcome back :D</h1>
 
             <div className="flex flex-col gap-4">
-
+                {/* space for email */}
                 <div className="flex">
-                    <Label htmlFor="email" className="w-32">Username/Email:</Label>
+                    <Label htmlFor="email" className="w-32">Email</Label>
                     <Input
                         id="email"
                         type="email"
                         placeholder="Enter your email"
                         className="flex-1 rounded border"
                         value={email}
-                        onChange={(event) => setEmail(event.target.value)}
-                    />
+                        onChange={(event) => setEmail(event.target.value)} />
                 </div>
 
+                {/* space for password */}
                 <div className="flex">
                     <Label htmlFor="password" className="w-32">Password:</Label>
                     <Input
@@ -72,8 +73,7 @@ export default function LoginForm() {
                         placeholder="Enter your password"
                         className="flex-1 rounded border"
                         value={password}
-                        onChange={(event) => setPassword(event.target.value)}
-                    />
+                        onChange={(event) => setPassword(event.target.value)} />
                 </div>
 
             </div>
