@@ -13,6 +13,32 @@ export default function SignupForm() {
     const [error, setError] = useState("")
     const router = useRouter()
 
+    function validatePassword(password: string) {
+        const errors = []
+
+        if (password.length < 6) {
+            errors.push("At least 6 characters")
+        }
+
+        if (!/[a-z]/.test(password)) {
+            errors.push("At least one lowercase letter")
+        }
+
+        if (!/[A-Z]/.test(password)) {
+            errors.push("At least one uppercase letter")
+        }
+
+        if (!/[0-9]/.test(password)) {
+            errors.push("At least one number")
+        }
+
+        if (!/[^a-zA-Z0-9]/.test(password)) {
+            errors.push("At least one special character")
+        }
+
+        return errors
+    }
+
     async function handleSubmit(event: React.SyntheticEvent<HTMLFormElement>) {
         // 1. Validate inputs
         event.preventDefault()
@@ -20,9 +46,13 @@ export default function SignupForm() {
             setError("Please enter both your email and password.")
             return
         }
+        //2. Validate password
+        const passwordErrors = validatePassword(password)
+        if (passwordErrors.length > 0) {
+            setError(passwordErrors.join(", "))
+            return
+        }
         setError("no Error")
-
-        //more validation to come in the future
 
         try {
             await createUserWithEmailAndPassword(auth, email, password);
