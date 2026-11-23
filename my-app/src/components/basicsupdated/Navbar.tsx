@@ -1,5 +1,6 @@
 import { Button } from "@/components/basics/button";
 import { UserAvatar } from "@/components/basicsupdated/userAvatar";
+import Link from "next/link";
 //deciding on...
 //text-xl font-bold text-center
 //absolute left-1/2 -translate-x-1/2 text-xl font-bold
@@ -19,11 +20,15 @@ export default function Navbar() {
             ) : (
                 <div className="flex items-center gap-2">
                     <Button variant="ghost">
-                        Sign Up
+                        <Link href="/signup">
+                            Sign Up
+                        </Link>
                     </Button>
 
                     <Button variant="ghost">
-                        Login
+                        <Link href="login">
+                            Login
+                        </Link>
                     </Button>
                 </div>
             )}
