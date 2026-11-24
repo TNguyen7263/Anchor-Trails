@@ -19,6 +19,27 @@ August 2-8:
     - deploy and buy url
 
 
+------------- schedule delayed with work, new schedule below -------------
 
-    
+End goal: 
+- area to manually enter Reciept Items. 
+- Spliting items with participants
+- Total for each participants
 
+
+Tasks:
+
+create component for Reciept items (est finish: Nov 26)
+- Users must have the option to enter items name 
+= Users must have enter items price
+- Users must be ablf to assign participants to items
+= Users must be able to split the item between participants
+
+
+Create component to display total for each participants
+- must show Subtotal
+- must show tax 
+- must allow users to adjust tax percentage
+- must show total
+
+Deploy site on Google Cloud
