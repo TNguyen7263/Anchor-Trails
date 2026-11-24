@@ -1,6 +1,6 @@
 import Navbar from "@/components/basicsupdated/Navbar"
 import UsersList from "@/components/reciept/UsersList"
-import ItemsList from "@/components/reciept/ItemsList"
+import ItemsList from "@/components/reciept/EntireReceipt"
 
 export default function HomePage() {
   return (
